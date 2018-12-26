@@ -1,31 +1,31 @@
-﻿# Ensure that Get-ChildItemColor is loaded
+﻿#Ensure that Get-ChildItemColor is loaded
 Import-Module Get-ChildItemColor
 
 # Set l and ls alias to use the new Get-ChildItemColor cmdlets
 Set-Alias l Get-ChildItemColor -Option AllScope
 Set-Alias ls Get-ChildItemColorFormatWide -Option AllScope
 
-Import-Module posh-git
+# Import-Module posh-git
 Start-SshAgent -Quiet
 
-Add-PSSnapIn Microsoft.HPC
+# Add-PSSnapIn Microsoft.HPC
 
-function Remove-Bom() {
-    # See https://stackoverflow.com/a/5596984.
-    param([string] $Path);
-    $resolved = Resolve-Path $Path;
-    $contents = Get-Content $resolved;
-    $encoding = New-Object System.Text.UTF8Encoding $False;
-    [System.IO.File]::WriteAllLines($resolved, $contents, $encoding);
-}
+# function Remove-Bom() {
+#     # See https://stackoverflow.com/a/5596984.
+#     param([string] $Path);
+#     $resolved = Resolve-Path $Path;
+#     $contents = Get-Content $resolved;
+#     $encoding = New-Object System.Text.UTF8Encoding $False;
+#     [System.IO.File]::WriteAllLines($resolved, $contents, $encoding);
+# }
 
-Import-Module -Name oh-my-posh
-Set-Theme Agnoster
+# Import-Module -Name oh-my-posh
+# Set-Theme Agnoster
 
-if ($Env:TERM_PROGRAM -eq "vscode") {
-    # Fix for the missing "DarkYellow" color in VS Code.
-    $ThemeSettings.Colors["GitLocalChangesColor"] = "White"
-}
+# if ($Env:TERM_PROGRAM -eq "vscode") {
+#     # Fix for the missing "DarkYellow" color in VS Code.
+#     $ThemeSettings.Colors["GitLocalChangesColor"] = "White"
+# }
 
 $oldPrompt = $Function:prompt;
 
@@ -45,4 +45,10 @@ function prompt() {
 
     }
 
+}
+
+# Chocolatey profile
+$ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
+if (Test-Path($ChocolateyProfile)) {
+  Import-Module "$ChocolateyProfile"
 }
