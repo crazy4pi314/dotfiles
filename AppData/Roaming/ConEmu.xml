@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2019-03-25 12:03:33" build="190310">
+		<key name=".Vanilla" modified="2018-11-04 14:12:47" build="180626">
 			<value name="StartType" type="hex" data="02"/>
 			<value name="CmdLine" type="string" data=""/>
 			<value name="StartTasksFile" type="string" data=""/>
@@ -58,9 +58,9 @@
 			<value name="FontUseUnits" type="hex" data="01"/>
 			<value name="FontSize" type="ulong" data="14"/>
 			<value name="StatusFontHeight" type="long" data="12"/>
-			<value name="TabFontHeight" type="long" data="14"/>
-			<key name="HotKeys" modified="2019-03-19 14:02:21" build="180626">
-				<value name="MinimizeRestore" type="dword" data="000011c0"/>
+			<value name="TabFontHeight" type="long" data="13"/>
+			<key name="HotKeys" modified="2018-08-19 12:25:26" build="180626">
+				<value name="MinimizeRestore" type="dword" data="00005bc0"/>
 				<value name="KeyMacroVersion" type="hex" data="02"/>
 				<value name="Multi.Modifier" type="dword" data="000000a2"/>
 				<value name="Multi.ArrowsModifier" type="dword" data="0000005b"/>
@@ -99,7 +99,7 @@
 				<value name="Multi.SplitSwapR" type="dword" data="00125d27"/>
 				<value name="Multi.Next" type="dword" data="00105b51"/>
 				<value name="Multi.NextShift" type="dword" data="00000000"/>
-				<value name="Multi.Recreate" type="dword" data="00005bc0"/>
+				<value name="Multi.Recreate" type="dword" data="00105bc0"/>
 				<value name="Multi.AltCon" type="dword" data="00005b41"/>
 				<value name="Multi.Pause" type="dword" data="80808013"/>
 				<value name="Multi.Scroll" type="dword" data="00000000"/>
@@ -309,6 +309,7 @@
 			<value name="SaveCmdHistory" type="hex" data="01"/>
 			<value name="CmdLineHistory" type="multi">
 				<line data="{Shells::PowerShell (Admin)}"/>
+				<line data="{Shells::WSL PowerShell Core}"/>
 				<line data="{Shells::PowerShell}"/>
 				<line data="pwsh.exe"/>
 				<line data="powershell.exe"/>
@@ -355,7 +356,7 @@
 			<value name="bgImageColors" type="dword" data="ffffffff"/>
 			<value name="bgOperation" type="hex" data="00"/>
 			<value name="bgPluginAllowed" type="hex" data="01"/>
-			<value name="AlphaValue" type="hex" data="EE"/>
+			<value name="AlphaValue" type="hex" data="FF"/>
 			<value name="AlphaValueSeparate" type="hex" data="00"/>
 			<value name="AlphaValueInactive" type="hex" data="FF"/>
 			<value name="UserScreenTransparent" type="hex" data="00"/>
@@ -366,11 +367,11 @@
 			<value name="Cascaded" type="hex" data="01"/>
 			<value name="IntegralSize" type="hex" data="00"/>
 			<value name="WindowMode" type="dword" data="0000051f"/>
-			<value name="ConWnd X" type="long" data="1039"/>
+			<value name="ConWnd X" type="long" data="365"/>
 			<value name="ConWnd Y" type="long" data="0"/>
-			<value name="LastMonitor" type="string" data="0,0,3840,2110"/>
-			<value name="ConWnd Width" type="dword" data="000000a0"/>
-			<value name="ConWnd Height" type="dword" data="00000021"/>
+			<value name="LastMonitor" type="string" data="0,0,3840,2060"/>
+			<value name="ConWnd Width" type="dword" data="0200005f"/>
+			<value name="ConWnd Height" type="dword" data="02000038"/>
 			<value name="16bit Height" type="ulong" data="0"/>
 			<value name="Restore2ActiveMon" type="hex" data="01"/>
 			<value name="QuakeAnimation" type="ulong" data="200"/>
@@ -556,7 +557,7 @@
 			<value name="SkipFocusEvents" type="hex" data="00"/>
 			<value name="MonitorConsoleLang" type="hex" data="03"/>
 			<value name="SnapToDesktopEdges" type="hex" data="01"/>
-			<value name="AlwaysOnTop" type="hex" data="00"/>
+			<value name="AlwaysOnTop" type="hex" data="01"/>
 			<value name="SleepInBackground" type="hex" data="00"/>
 			<value name="RetardInactivePanes" type="hex" data="00"/>
 			<value name="MinimizeOnLoseFocus" type="hex" data="00"/>
@@ -607,8 +608,8 @@
 			<value name="Update.DownloadPath" type="string" data="%TEMP%\ConEmu"/>
 			<value name="Update.LeavePackages" type="hex" data="00"/>
 			<value name="Update.PostUpdateCmd" type="string" data="echo Last successful update&gt;ConEmuUpdate.info &amp;&amp; date /t&gt;&gt;ConEmuUpdate.info &amp;&amp; time /t&gt;&gt;ConEmuUpdate.info"/>
-			<key name="Tasks" modified="2018-04-11 15:15:30" build="170910">
-				<value name="Count" type="long" data="16"/>
+			<key name="Tasks" modified="2018-11-04 13:27:53" build="180626">
+				<value name="Count" type="long" data="17"/>
 				<key name="Task1" modified="2018-04-11 15:15:30" build="170910">
 					<value name="Name" type="string" data="{Shells::cmd}"/>
 					<value name="Flags" type="dword" data="00000000"/>
@@ -664,7 +665,16 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task7" modified="2019-03-19 14:01:34" build="180626">
+				<key name="Task7" modified="2018-11-04 13:27:53" build="180626">
+					<value name="Name" type="string" data="{Shells::WSL PowerShell Core}"/>
+					<value name="Flags" type="dword" data="00000004"/>
+					<value name="Hotkey" type="dword" data="00000000"/>
+					<value name="GuiArgs" type="string" data='/icon "C:\Windows\Installer\{B1DD8B0F-1DDA-4B7A-A9CE-67B3F7138D08}\PowerShellExe.ico"'/>
+					<value name="Cmd1" type="string" data="ubuntu1804.exe run pwsh"/>
+					<value name="Active" type="long" data="0"/>
+					<value name="Count" type="long" data="1"/>
+				</key>
+				<key name="Task8" modified="2018-11-04 13:27:53" build="180626">
 					<value name="Name" type="string" data="{Shells::PowerShell (Admin)}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00105b57"/>
@@ -673,7 +683,7 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task8" modified="2018-04-11 15:15:30" build="170910">
+				<key name="Task9" modified="2018-11-04 13:27:53" build="180626">
 					<value name="Name" type="string" data="{Bash::bash}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -682,7 +692,7 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task9" modified="2018-04-11 15:15:30" build="170910">
+				<key name="Task10" modified="2018-11-04 13:27:53" build="180626">
 					<value name="Name" type="string" data="{Bash::Git bash}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -691,7 +701,7 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task10" modified="2018-04-11 15:15:30" build="170910">
+				<key name="Task11" modified="2018-11-04 13:27:53" build="180626">
 					<value name="Name" type="string" data="{Putty}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -700,7 +710,7 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task11" modified="2018-04-11 15:15:30" build="170910">
+				<key name="Task12" modified="2018-11-04 13:27:53" build="180626">
 					<value name="Name" type="string" data="{Helper::Show ANSI colors}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -709,7 +719,7 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task12" modified="2018-04-11 15:15:30" build="170910">
+				<key name="Task13" modified="2018-11-04 13:27:53" build="180626">
 					<value name="Name" type="string" data="{SDK::VS 15.0 x86 tools prompt}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -718,7 +728,7 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task13" modified="2018-04-11 15:15:30" build="170910">
+				<key name="Task14" modified="2018-11-04 13:27:53" build="180626">
 					<value name="Name" type="string" data="{SDK::VS 15.0 x64 tools prompt}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -727,7 +737,7 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task14" modified="2018-04-11 15:15:30" build="170910">
+				<key name="Task15" modified="2018-11-04 13:27:53" build="180626">
 					<value name="Name" type="string" data="{Tools::Chocolatey (Admin)}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -736,7 +746,7 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task15" modified="2018-04-11 15:15:30" build="170910">
+				<key name="Task16" modified="2018-11-04 13:27:53" build="180626">
 					<value name="Name" type="string" data="{SDK::VS 14.0 x86 tools prompt}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -745,14 +755,14 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task16" modified="2018-04-11 15:15:30" build="170910">
+				<key name="Task17" modified="2018-11-04 13:27:53" build="180626">
 					<value name="Name" type="string" data="{SDK::VS 14.0 x64 tools prompt}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="GuiArgs" type="string" data=""/>
-					<value name="Cmd1" type="string" data='cmd /k ""%ConEmuDrive%\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat"" x64 -new_console:t:"VS 14.0" -new_console:C:"%CommonProgramFiles(x86)%\microsoft shared\MSEnv\VSFileHandler.dll,33"'/>
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
+					<value name="Cmd1" type="string" data='cmd /k ""%ConEmuDrive%\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat"" x64 -new_console:t:"VS 14.0" -new_console:C:"%CommonProgramFiles(x86)%\microsoft shared\MSEnv\VSFileHandler.dll,33"'/>
 				</key>
 			</key>
 			<key name="Apps" modified="2018-04-11 15:15:30" build="170910">
@@ -765,7 +775,6 @@
 			<value name="RestoreInactive" type="hex" data="00"/>
 			<value name="DynamicBufferHeight" type="hex" data="01"/>
 			<value name="StatusBar.Hide.WMode" type="hex" data="01"/>
-			<value name="AutoTrimSingleLine" type="hex" data="00"/>
 		</key>
 	</key>
 </key>
