@@ -1,6 +1,6 @@
 [user]
-	email = chgranad@microsoft.com
-	name = Christopher Granade
+	email = sarah.kaiser@pensardevelopment.com
+	name = Sarah Kaiser
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
