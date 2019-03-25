@@ -4,9 +4,12 @@ Import-Module Get-ChildItemColor
 # Set l and ls alias to use the new Get-ChildItemColor cmdlets
 Set-Alias l Get-ChildItemColor -Option AllScope
 Set-Alias ls Get-ChildItemColorFormatWide -Option AllScope
+Set-Alias sshxavier Ssh-Xavier
+Set-Alias sshtx2 Ssh-Tegra
 
 # Import-Module posh-git
 Start-SshAgent -Quiet
+Add-SshKey "V:\\secure\\phab-private.ppk"
 
 # Add-PSSnapIn Microsoft.HPC
 
@@ -46,6 +49,31 @@ function prompt() {
     }
 
 }
+
+
+function Ssh-Tegra {
+    #$Host.UI.RawUI.backgroundcolor = "DarkRed"
+    clear
+    echo "########################################`n SSHing into tegra.pensardevelopment.com"
+    ssh -i "~/.ssh/phab-private" nvidia@tegra.pensardevelopment.com
+    echo "leaving tegra.pensardevelopment.com `n ########################################"
+}
+
+function Ssh-Tegra2 {
+    #$Host.UI.RawUI.backgroundcolor = "DarkRed"
+    clear
+    echo "########################################`n SSHing into tegra2.pensardevelopment.com"
+    ssh -i "~/.ssh/phab-private" nvidia@tegra2.pensardevelopment.com
+    echo "leaving tegra2.pensardevelopment.com `n ########################################"
+}
+function Ssh-Xavier {
+    #$Host.UI.RawUI.backgroundcolor = "DarkGreen"
+    clear
+    echo "########################################`n SSHing into xavier.pensardevelopment.com"
+    ssh -i "~/.ssh/phab-private" nvidia@xavier.pensardevelopment.com
+    echo "leaving xavier.pensardevelopment.com `n ########################################"
+}
+
 
 # Chocolatey profile
 $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
