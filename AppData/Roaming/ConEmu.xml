@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2019-03-07 11:13:20" build="180626">
+		<key name=".Vanilla" modified="2019-03-25 12:03:33" build="190310">
 			<value name="StartType" type="hex" data="02"/>
 			<value name="CmdLine" type="string" data=""/>
 			<value name="StartTasksFile" type="string" data=""/>
@@ -366,11 +366,11 @@
 			<value name="Cascaded" type="hex" data="01"/>
 			<value name="IntegralSize" type="hex" data="00"/>
 			<value name="WindowMode" type="dword" data="0000051f"/>
-			<value name="ConWnd X" type="long" data="703"/>
+			<value name="ConWnd X" type="long" data="1039"/>
 			<value name="ConWnd Y" type="long" data="0"/>
 			<value name="LastMonitor" type="string" data="0,0,3840,2110"/>
-			<value name="ConWnd Width" type="dword" data="000000dd"/>
-			<value name="ConWnd Height" type="dword" data="0000002c"/>
+			<value name="ConWnd Width" type="dword" data="000000a0"/>
+			<value name="ConWnd Height" type="dword" data="00000021"/>
 			<value name="16bit Height" type="ulong" data="0"/>
 			<value name="Restore2ActiveMon" type="hex" data="01"/>
 			<value name="QuakeAnimation" type="ulong" data="200"/>
@@ -765,6 +765,7 @@
 			<value name="RestoreInactive" type="hex" data="00"/>
 			<value name="DynamicBufferHeight" type="hex" data="01"/>
 			<value name="StatusBar.Hide.WMode" type="hex" data="01"/>
+			<value name="AutoTrimSingleLine" type="hex" data="00"/>
 		</key>
 	</key>
 </key>
