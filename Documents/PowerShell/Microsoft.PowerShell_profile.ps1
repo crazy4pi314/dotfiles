@@ -10,13 +10,14 @@ Import-Module Get-ChildItemColor
     Set-Alias ls Get-ChildItemColorFormatWide -Option AllScope
 
 Import-Module -Name oh-my-posh
-    Set-Theme Agnoster
+    Set-Theme fairyfloss
+    $DefaultUser = "skais"
 
 
-if ($Env:TERM_PROGRAM -eq "vscode") {
+#if ($Env:TERM_PROGRAM -eq "vscode") {
     # Fix for the missing "DarkYellow" color in VS Code.
-    $ThemeSettings.Colors["GitLocalChangesColor"] = "White"
-}
+#    $ThemeSettings.Colors["GitLocalChangesColor"] = "White"
+#}
 
 ## PROMPT ####################################################################
 
@@ -137,6 +138,5 @@ if ($IsWindows) {
 
 #region conda initialize
 # !! Contents within this block are managed by 'conda init' !!
-(& C:\Users\chgranad.REDMOND\Source\Repos\conda\devenv\Scripts\conda.exe shell.powershell hook) | Out-String | Invoke-Expression
+#(& C:\Users\chgranad.REDMOND\Source\Repos\conda\devenv\Scripts\conda.exe shell.powershell hook) | Out-String | Invoke-Expression
 #endregion
-
