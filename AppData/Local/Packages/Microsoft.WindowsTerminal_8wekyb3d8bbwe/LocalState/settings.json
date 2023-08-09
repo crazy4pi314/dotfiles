@@ -31,7 +31,7 @@
     ],
     "copyFormatting": "none",
     "copyOnSelect": true,
-    "defaultProfile": "{aab79973-318f-43b6-a9bc-b4096493753f}",
+    "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402345}",
     "newTabMenu": 
     [
         {
@@ -48,33 +48,163 @@
                 "face": "CaskaydiaCove Nerd Font Mono"
             },
             "opacity": 87,
+            "scrollbarState": "hidden",
             "useAcrylic": true
         },
         "list": 
         [
             {
+            "backgroundImage": "C:/Users/skais/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/fairy_floss_title.png",
+            "backgroundImageAlignment": "topLeft",
+            "backgroundImageOpacity": 0.15,
+            "backgroundImageStretchMode": "fill",
+            "closeOnExit": "graceful",
+            "colorScheme": "Fairy Floss",
+            "commandline": "pwsh.exe",
+            "cursorColor": "#F8F8F0",
+            "cursorShape": "bar",
+            "font": 
+            {
+                "face": "CaskaydiaCove NF",
+                "size": 14
+            },
+            "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402345}",
+            "historySize": 9001,
+            "icon": "ms-appx:///ProfileIcons/{61c54bbd-c2c6-5271-96e7-009a87ff44bf}.png",
+            "name": "FairyShell",
+            "opacity": 64,
+            "padding": "5, 0, 0, 0",
+            "snapOnInput": true,
+            "startingDirectory": "%USERPROFILE%",
+            "tabTitle": "FairyShell",
+            "useAcrylic": true
+        },
+
+        {
+            "altGrAliasing": true,
+            "antialiasingMode": "grayscale",
+            "backgroundImage": "C:\\Users\\skais\\OneDrive\\meeting-backgrounds\\151711-apps-feature-high-res-zoom-backgrounds-image1-aceyhzfphc.jpg",
+            "backgroundImageAlignment": "topLeft",
+            "backgroundImageOpacity": 0.15,
+            "closeOnExit": "graceful",
+            "colorScheme": "ACHN",
+            "commandline": "pwsh.exe",
+            "cursorShape": "bar",
+            "experimental.retroTerminalEffect": false,
+            "font": 
+            {
+                "face": "CaskaydiaCove Nerd Font Mono",
+                "size": 12.0
+            },
+            "guid": "{50d830bf-d9d0-44d4-a9a5-b3a3c3e72c5b}",
+            "historySize": 9001,
+            "icon": "ms-appx:///ProfileIcons/{61c54bbd-c2c6-5271-96e7-009a87ff44bf}.png",
+            "name": "ACNH PS",
+            "opacity": 49,
+            "padding": "5",
+            "scrollbarState": "visible",
+            "snapOnInput": true,
+            "startingDirectory": "%USERPROFILE%",
+            "useAcrylic": true
+        },
+        {
+            "colorScheme": "ACHN",
+            "closeOnExit": "graceful",
+            "commandline": "C:\\Program Files\\PowerShell\\6\\pwsh.exe",
+            "cursorColor": "#FFFFFF",
+            "cursorShape": "bar",
+            "font": 
+            {
+                "face": "Consolas",
+                "size": 10
+            },
+            "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+            "hidden": false,
+            "historySize": 9001,
+            "icon": "ms-appx:///ProfileIcons/{574e775e-4f2a-5b96-ac1e-a2962a402336}.png",
+            "name": "PowerShell Core",
+            "opacity": 50,
+            "padding": "0, 0, 0, 0",
+            "snapOnInput": true,
+            "source": "Windows.Terminal.PowershellCore",
+            "startingDirectory": "%USERPROFILE%",
+            "useAcrylic": false
+        },
+            {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "background": "#012456",
+                "closeOnExit": "graceful",
+                "colorScheme": "Campbell",
+                "cursorColor": "#FFFFFF",
+                "cursorShape": "bar",
+                "font": 
+                {
+                    "face": "Consolas",
+                    "size": 10
+                },
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "historySize": 9001,
+                "icon": "ms-appx:///ProfileIcons/{61c54bbd-c2c6-5271-96e7-009a87ff44bf}.png",
                 "hidden": true,
-                "name": "Windows PowerShell"
+                "name": "Windows PowerShell",
+                "opacity": 50,
+                "padding": "0, 0, 0, 0",
+                "snapOnInput": true,
+                "startingDirectory": "%USERPROFILE%",
+                "useAcrylic": false
             },
             {
                 "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "closeOnExit": "graceful",
+                "colorScheme": "Campbell",
+                "cursorColor": "#FFFFFF",
+                "cursorShape": "bar",
+                "font": 
+                {
+                    "face": "Consolas",
+                    "size": 10
+                },
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-                "hidden": false,
-                "name": "Command Prompt"
+                "historySize": 9001,
+                "icon": "ms-appx:///ProfileIcons/{0caa0dad-35be-5f56-a8ff-afceeeaa6101}.png",
+                "name": "cmd",
+                "opacity": 75,
+                "padding": "0, 0, 0, 0",
+                "snapOnInput": true,
+                "startingDirectory": "%USERPROFILE%",
+                "useAcrylic": true
             },
             {
+                "closeOnExit": "never",
+                "colorScheme": "Solarized Dark",
+                "commandline": "Azure",
+                "cursorColor": "#FFFFFF",
+                "cursorShape": "bar",
+                "font": 
+                {
+                    "face": "Consolas",
+                    "size": 10
+                },
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
                 "hidden": true,
+                "historySize": 9001,
+                "icon": "ms-appx:///ProfileIcons/{b453ae62-4e3d-5e58-b989-0a998ec441b8}.png",
                 "name": "Azure Cloud Shell",
-                "source": "Windows.Terminal.Azure"
+                "opacity": 85,
+                "padding": "0, 0, 0, 0",
+                "snapOnInput": true,
+                "source": "Windows.Terminal.Azure",
+                "startingDirectory": "%USERPROFILE%",
+                "useAcrylic": true
             },
             {
                 "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
                 "hidden": true,
                 "name": "Ubuntu",
-                "source": "Windows.Terminal.Wsl"
+                "source": "Windows.Terminal.Wsl",
+                "colorScheme": "Campbell",
+                "experimental.retroTerminalEffect": true,
+                "opacity": 80
             },
             {
                 "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
@@ -83,26 +213,106 @@
                 "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
             },
             {
-                "font": 
-                {
-                    "face": "CaskaydiaCove Nerd Font Mono"
-                },
-                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+                "guid": "{88c44314-74ed-5273-8049-a16ea9ef4d09}",
                 "hidden": false,
-                "name": "PowerShell",
-                "source": "Windows.Terminal.PowershellCore"
+                "name": "Developer Command Prompt for VS 2019",
+                "source": "Windows.Terminal.VisualStudio"
             },
             {
-                "colorScheme": "One Half Dark",
-                "guid": "{aab79973-318f-43b6-a9bc-b4096493753f}",
+                "guid": "{d0926cd3-b24d-50ab-8769-fcaba4ac8bae}",
                 "hidden": false,
-                "name": "Nushell",
-                "source": "nu"
+                "name": "Developer PowerShell for VS 2019",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "adjustIndistinguishableColors": "indexed",
+                "colorScheme": "One Half Dark",
+                "commandline": "C:\\ProgramData\\chocolatey\\bin\\nu.exe",
+                "font": 
+                {
+                    "face": "CaskaydiaCove Nerd Font"
+                },
+                "guid": "{c3e8478e-decb-468d-92c8-c2db43780149}",
+                "hidden": false,
+                "icon": "\ud83d\udc1a",
+                "name": "Nu\ud83d\udc1a",
+                "opacity": 90,
+                "startingDirectory": "%USERPROFILE%",
+                "useAcrylic": true
             }
         ]
     },
     "schemes": 
     [
+        {
+            "background": "#C9C9C9",
+            "black": "#282A2E",
+            "blue": "#1F415C",
+            "brightBlack": "#373B41",
+            "brightBlue": "#8BCAFF",
+            "brightCyan": "#4DE0CC",
+            "brightGreen": "#BBD627",
+            "brightPurple": "#DF9AF4",
+            "brightRed": "#F99191",
+            "brightWhite": "#FAFAFA",
+            "brightYellow": "#FFDA90",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#005E52",
+            "foreground": "#FFFFFF",
+            "green": "#9AD157",
+            "name": "ACHN",
+            "purple": "#692381",
+            "red": "#B12F2F",
+            "selectionBackground": "#FFFFFF",
+            "white": "#C1C1C1",
+            "yellow": "#FF9A54"
+        },
+        {
+            "background": "#1A1A1A",
+            "black": "#000000",
+            "blue": "#579BD5",
+            "brightBlack": "#797979",
+            "brightBlue": "#9CDCFE",
+            "brightCyan": "#2BC4E2",
+            "brightGreen": "#1AD69C",
+            "brightPurple": "#975EAB",
+            "brightRed": "#EB2A88",
+            "brightWhite": "#EAEAEA",
+            "brightYellow": "#E9AD95",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#00B6D6",
+            "foreground": "#EA549F",
+            "green": "#4EC9B0",
+            "name": "Aurelia",
+            "purple": "#714896",
+            "red": "#E92888",
+            "selectionBackground": "#FFFFFF",
+            "white": "#EAEAEA",
+            "yellow": "#CE9178"
+        },
+        {
+            "background": "#1C0C28",
+            "black": "#0A4C62",
+            "blue": "#90A5BD",
+            "brightBlack": "#201637",
+            "brightBlue": "#39173D",
+            "brightCyan": "#5E6071",
+            "brightGreen": "#0A6C7E",
+            "brightPurple": "#BC94B7",
+            "brightRed": "#C87272",
+            "brightWhite": "#0A6C7E",
+            "brightYellow": "#7A3188",
+            "cursorColor": "#FCFAD6",
+            "cyan": "#7E83CC",
+            "foreground": "#BABAB9",
+            "green": "#5CB1B3",
+            "name": "BlueBerryPie",
+            "purple": "#9D54A7",
+            "red": "#99246E",
+            "selectionBackground": "#606060",
+            "white": "#F0E8D6",
+            "yellow": "#EAB9A8"
+        },
         {
             "background": "#0C0C0C",
             "black": "#0C0C0C",
@@ -152,6 +362,29 @@
         {
             "background": "#000000",
             "black": "#0C0C0C",
+            "blue": "#005E52",
+            "brightBlack": "#767676",
+            "brightBlue": "#4DE0CC",
+            "brightCyan": "#61D6D6",
+            "brightGreen": "#16C60C",
+            "brightPurple": "#B4009E",
+            "brightRed": "#E74856",
+            "brightWhite": "#F2F2F2",
+            "brightYellow": "#F9F1A5",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#3A96DD",
+            "foreground": "#FFFFFF",
+            "green": "#13A10E",
+            "name": "Color Scheme 12",
+            "purple": "#881798",
+            "red": "#C50F1F",
+            "selectionBackground": "#FFFFFF",
+            "white": "#CCCCCC",
+            "yellow": "#C19C00"
+        },
+        {
+            "background": "#000000",
+            "black": "#0C0C0C",
             "blue": "#0037DA",
             "brightBlack": "#767676",
             "brightBlue": "#3B78FF",
@@ -171,6 +404,52 @@
             "selectionBackground": "#FFFFFF",
             "white": "#CCCCCC",
             "yellow": "#C19C00"
+        },
+        {
+            "background": "#5A5475",
+            "black": "#464258",
+            "blue": "#6C71C4",
+            "brightBlack": "#C19FD8",
+            "brightBlue": "#6796E6",
+            "brightCyan": "#C2FFDF",
+            "brightGreen": "#FFB8D1",
+            "brightPurple": "#AE81FF",
+            "brightRed": "#F44747",
+            "brightWhite": "#F8F8F0",
+            "brightYellow": "#FFF352",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#AFECAD",
+            "foreground": "#F8F8F0",
+            "green": "#AD5877",
+            "name": "Fairy Floss",
+            "purple": "#B267E6",
+            "red": "#FF857F",
+            "selectionBackground": "#FFFFFF",
+            "white": "#CCCCCC",
+            "yellow": "#E6C000"
+        },
+        {
+            "background": "#030D18",
+            "black": "#626262",
+            "blue": "#FED300",
+            "brightBlack": "#8F8F8F",
+            "brightBlue": "#F92883",
+            "brightCyan": "#E6E7FE",
+            "brightGreen": "#D6FCBA",
+            "brightPurple": "#FFB2FE",
+            "brightRed": "#FFC4BE",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFFED5",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#D1D1FE",
+            "foreground": "#F106E3",
+            "green": "#B4FB73",
+            "name": "Laser",
+            "purple": "#FF90FE",
+            "red": "#FF8373",
+            "selectionBackground": "#FFFFFF",
+            "white": "#F1F1F1",
+            "yellow": "#09B4BD"
         },
         {
             "background": "#282C34",
@@ -219,10 +498,33 @@
             "yellow": "#C18301"
         },
         {
+            "background": "#243435",
+            "black": "#757575",
+            "blue": "#4D7B82",
+            "brightBlack": "#8A8A8A",
+            "brightBlue": "#7AC3CF",
+            "brightCyan": "#ADE0E0",
+            "brightGreen": "#98D9AA",
+            "brightPurple": "#D6B2A1",
+            "brightRed": "#CF937A",
+            "brightWhite": "#E0E0E0",
+            "brightYellow": "#FAE79D",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#729494",
+            "foreground": "#D4E7D4",
+            "green": "#728C62",
+            "name": "Seafoam Pastel",
+            "purple": "#8A7267",
+            "red": "#825D4D",
+            "selectionBackground": "#FFFFFF",
+            "white": "#E0E0E0",
+            "yellow": "#ADA16D"
+        },
+        {
             "background": "#002B36",
-            "black": "#002B36",
+            "black": "#073642",
             "blue": "#268BD2",
-            "brightBlack": "#073642",
+            "brightBlack": "#002B36",
             "brightBlue": "#839496",
             "brightCyan": "#93A1A1",
             "brightGreen": "#586E75",
@@ -243,9 +545,9 @@
         },
         {
             "background": "#FDF6E3",
-            "black": "#002B36",
+            "black": "#073642",
             "blue": "#268BD2",
-            "brightBlack": "#073642",
+            "brightBlack": "#002B36",
             "brightBlue": "#839496",
             "brightCyan": "#93A1A1",
             "brightGreen": "#586E75",
@@ -253,7 +555,7 @@
             "brightRed": "#CB4B16",
             "brightWhite": "#FDF6E3",
             "brightYellow": "#657B83",
-            "cursorColor": "#002B36",
+            "cursorColor": "#FFFFFF",
             "cyan": "#2AA198",
             "foreground": "#657B83",
             "green": "#859900",
